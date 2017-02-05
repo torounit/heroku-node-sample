@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 });
 
 app.get("/greeting/:name", function(request, response){
-  response.send('Hello ' + request.params.name);
+  response.send('Hey! ' + request.params.name);
 });
 
 app.listen(app.get('port'), function() {
